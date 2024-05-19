@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sn
 import numpy as np
 
+listings = pd.read_csv('Desktop/Python/Airbnb_NYC_2019.csv')
+
 #Chart for Airbnb prices upto 900 dollars against number of reviews
 plt.scatter(x = listings['price'], y = listings['number_of_reviews'], s = 5)
 plt.xlabel('price')
