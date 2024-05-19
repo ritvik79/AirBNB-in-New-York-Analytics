@@ -1,0 +1,11 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sn
+import numpy as np
+
+#Chart for Airbnb prices upto 900 dollars against number of reviews
+plt.scatter(x = listings['price'], y = listings['number_of_reviews'], s = 5)
+plt.xlabel('price')
+plt.ylabel('number_of_reviews')
+plt.xlim(0, 900)
+plt.show
